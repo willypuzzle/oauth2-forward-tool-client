@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app-develop:
+    image: oauth2-client/headless
+    build:
+      context: ../..
+      dockerfile: ./docker/headless/Dockerfile
+      args:
+        - NODE_VERSION=${OAUTH2_CLIENT_NODE_VERSION}
+        - ALPINE_VERSION=${OAUTH2_CLIENT_ALPINE_VERSION}
+    volumes:
+      - ../..:/code
+    ports:
+      - "3000:3000"
