@@ -1,6 +1,7 @@
 {
-  "name": "oauth2-client",
-  "version": "0.1.0",
+  "name": "oauth2-forward-tool-client",
+  "version": "0.1.0-alpha.1",
+  "description": "OAuth2 Forwarding Tool with scope management - Client Side",
   "private": true,
   "scripts": {
     "dev": "next dev",
